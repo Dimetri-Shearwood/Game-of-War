@@ -49,7 +49,8 @@ const warPlay = (p1, p2) => {
   let warPile2 = player2Deck.splice(0, 3);
 
   warPile = [...warPile, ...warPile1, ...warPile2];
-  console.log(warPile1[0].number, warPile2[0].number);
+  if(warPile1.length && warPile2.length) {
+  console.log(warPile1[0].number, warPile2[0].number)}; //Testing
   if (warPile1[0].number > warPile2[0].number) {
     player1Deck.push(...warPile);
     console.log("Player 1 Wins This Round");
