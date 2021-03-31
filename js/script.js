@@ -54,11 +54,15 @@ const warPlay = (p1, p2) => {
   if (warPile1[0].number > warPile2[0].number) {
     player1Deck.push(...warPile);
     console.log("Player 1 Wins This Round");
+    console.log(warPile1[0], warPile2[0])
+    console.log(player1Deck.length, player2Deck.length)
   }
   // If player 1 has more cards they win
   else if (warPile1[0].number < warPile2[0].number) {
     player2Deck.push(...warPile);
     console.log("Player 2 Wins This Round");
+    console.log(warPile1[0], warPile2[0])
+    console.log(player1Deck.length, player2Deck.length)
   } else {
     warPlay();
   }
@@ -72,10 +76,14 @@ const roundPlay = () => {
   // If player 1 has more cards they win
   if (player1Card.number > player2Card.number) {
     console.log("Player 1 Wins This Round");
+    console.log(player1Card, player2Card)
+    console.log(player1Deck.length, player2Deck.length)
   }
   // If player 1 has more cards they win
   else if (player1Card.number < player2Card.number) {
     console.log("Player 2 Wins This Round");
+    console.log(player1Card, player2Card)
+    console.log(player1Deck.length, player2Deck.length)
   }
   // If players tie they go to war
   else {
