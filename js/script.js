@@ -1,8 +1,10 @@
-console.log("hello!");
+console.log("Hello! Lets begin!");
 
-let allSuits = ["spades", "clubs", "hearts", "diamonds"];
+let allSuits = ["\u2660", "\u2666", "\u2663", "\u2665"];
 let allFaces = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
 let allNumbers = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+
+
 class Card {
   constructor(number, face, suit) {
     this.number = number;
@@ -92,7 +94,7 @@ const roundPlay = () => {
     warPlay(player1Card, player2Card);
   }
 };
- console.log("hello")
+
 let game = true
 while (game){
   if( player1Deck.length == 0 ){
